@@ -1,3 +1,20 @@
+/**
+    Styles used from github.com/horst3180/arc-theme
+    Copyright (C) 2017 horst3180 (and contributors)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+**/
 body {
   color: #D3DAE3;
   background-color: #404552 !important; }
@@ -71,23 +88,33 @@ paper-header-panel#content-container paper-toolbar#material-app-bar {
     color: #D3DAE3; }
 
 .sj-search-box-0, .sj-search-box-1 {
-  background-color: rgba(95, 105, 127, 0.4);
-  border-color: rgba(21, 23, 28, 0.4); }
+  border-color: 1px solid rgba(21, 23, 28, 0.4);
+  background-color: rgba(95, 105, 127, 0.4); }
   .sj-search-box-0 #searchIcon.sj-search-box, .sj-search-box-1 #searchIcon.sj-search-box {
     color: #D3DAE3; }
   .sj-search-box-0 #input.sj-search-box::-webkit-input-placeholder, .sj-search-box-1 #input.sj-search-box::-webkit-input-placeholder {
     color: #D3DAE3; }
-
-.sj-search-box-0[opened], .sj-search-box-0[has-query], .sj-search-box-1[opened], .sj-search-box-1[has-query] {
-  background-color: #5294e2; }
-  .sj-search-box-0[opened] #searchIcon.sj-search-box, .sj-search-box-0[has-query] #searchIcon.sj-search-box, .sj-search-box-1[opened] #searchIcon.sj-search-box, .sj-search-box-1[has-query] #searchIcon.sj-search-box {
+  .sj-search-box-0[opened], .sj-search-box-0[has-query], .sj-search-box-1[opened], .sj-search-box-1[has-query] {
+    background-color: #2f343f; }
+    .sj-search-box-0[opened] #input.sj-search-box, .sj-search-box-0[has-query] #input.sj-search-box, .sj-search-box-1[opened] #input.sj-search-box, .sj-search-box-1[has-query] #input.sj-search-box {
+      background-color: #5294e2; }
+    .sj-search-box-0[opened] #searchIcon.sj-search-box, .sj-search-box-0[has-query] #searchIcon.sj-search-box, .sj-search-box-1[opened] #searchIcon.sj-search-box, .sj-search-box-1[has-query] #searchIcon.sj-search-box {
+      color: #ffffff; }
+    .sj-search-box-0[opened] #input.sj-search-box::-webkit-input-placeholder, .sj-search-box-0[has-query] #input.sj-search-box::-webkit-input-placeholder, .sj-search-box-1[opened] #input.sj-search-box::-webkit-input-placeholder, .sj-search-box-1[has-query] #input.sj-search-box::-webkit-input-placeholder {
+      color: #ffffff; }
+  .sj-search-box-0[opened]:not([num-suggestions="0"]) #input.sj-search-box, .sj-search-box-1[opened]:not([num-suggestions="0"]) #input.sj-search-box {
+    border-bottom: 1px solid rgba(21, 23, 28, 0.4); }
+  .sj-search-box-0 #clearButton.sj-search-box, .sj-search-box-1 #clearButton.sj-search-box {
     color: #ffffff; }
-.sj-search-box-0 #clearButton.sj-search-box, .sj-search-box-1 #clearButton.sj-search-box {
-  color: #ffffff; }
-.sj-search-box-0 #input.sj-search-box, .sj-search-box-1 #input.sj-search-box {
-  color: #ffffff; }
-  .sj-search-box-0 #input.sj-search-box::-webkit-input-placeholder, .sj-search-box-1 #input.sj-search-box::-webkit-input-placeholder {
+  .sj-search-box-0 #input.sj-search-box, .sj-search-box-1 #input.sj-search-box {
     color: #ffffff; }
+    .sj-search-box-0 #input.sj-search-box::-webkit-input-placeholder, .sj-search-box-1 #input.sj-search-box::-webkit-input-placeholder {
+      color: #ffffff; }
+  .sj-search-box-0 .sj-search-suggestion-0:hover, .sj-search-box-0 .sj-search-suggestion-0.query-selected, .sj-search-box-1 .sj-search-suggestion-0:hover, .sj-search-box-1 .sj-search-suggestion-0.query-selected {
+    background-color: #454c5c;
+    color: #D3DAE3; }
+  .sj-search-box-0 .sj-search-suggestion-0 #queryText.sj-search-suggestion, .sj-search-box-0 .sj-search-suggestion-0 iron-icon.sj-search-suggestion, .sj-search-box-1 .sj-search-suggestion-0 #queryText.sj-search-suggestion, .sj-search-box-1 .sj-search-suggestion-0 iron-icon.sj-search-suggestion {
+    color: #D3DAE3; }
 
 #player {
   background-color: #2f343f; }
@@ -137,6 +164,9 @@ paper-header-panel#content-container paper-toolbar#material-app-bar {
   background-color: #2f343f; }
 
 .songlist-container {
+  background-color: #2f343f; }
+
+.material-playlist-container {
   background-color: #2f343f; }
 
 .song-table th[data-col] {

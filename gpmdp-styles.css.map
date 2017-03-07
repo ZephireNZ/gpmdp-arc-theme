@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAOA,iBAAkB;EACd,gBAAgB,EAAE,KAAK;;AAIvB,yBAAW;EACP,gBAAgB,EAAE,KAAK;;AAI/B,UAAW;EACP,gBAAgB,EAAE,KAAK",
-"sources": ["gpmdp-styles.scss"],
+"mappings": "AAAA;;;;;;;;;;;;;;;;GAgBG;ACTH,iBAAkB;EACd,gBAAgB,EAAE,KAAK;;AAIvB,yBAAW;EACP,gBAAgB,EAAE,KAAK;;AAI/B,UAAW;EACP,gBAAgB,EAAE,KAAK",
+"sources": ["src/_colors.scss","src/gpmdp-styles.scss"],
 "names": [],
 "file": "gpmdp-styles.css"
 }

@@ -138,8 +138,8 @@ paper-header-panel#content-container paper-toolbar#material-app-bar {
 // Search Bar
 
 .sj-search-box-0, .sj-search-box-1 {
+    border-color: 1px solid $header_entry_border;
     background-color: $header_entry_bg;
-    border-color: $header_entry_border;
 
     #searchIcon.sj-search-box {
         color: $text_color;
@@ -148,14 +148,25 @@ paper-header-panel#content-container paper-toolbar#material-app-bar {
     #input.sj-search-box::-webkit-input-placeholder {
         color: $text_color; 
     }
-}
 
-.sj-search-box-0, .sj-search-box-1 {
     &[opened], &[has-query] {
-        background-color: $selected_bg_color;
+        background-color: $header_bg;
+
+        #input.sj-search-box {
+            background-color: $selected_bg_color;
+        }
+
         #searchIcon.sj-search-box {
             color: $selected_fg_color;
         }
+
+        #input.sj-search-box::-webkit-input-placeholder {
+            color: $selected_fg_color;
+        }
+    }
+
+    &[opened]:not([num-suggestions="0"]) #input.sj-search-box {
+        border-bottom: 1px solid $header_entry_border;
     }
 
     #clearButton.sj-search-box {
@@ -169,6 +180,19 @@ paper-header-panel#content-container paper-toolbar#material-app-bar {
             color: $selected_fg_color; 
         }
     }
+
+    .sj-search-suggestion-0 {
+        &:hover, &.query-selected {
+            background-color: lighten($header_bg, 10%);
+            color: $text_color;
+        }
+
+        #queryText.sj-search-suggestion, iron-icon.sj-search-suggestion {
+            color: $text_color;
+        }
+    }
+
+
 }
 
 // Player bar
@@ -259,6 +283,10 @@ paper-header-panel#content-container paper-toolbar#material-app-bar {
 }
 
 .songlist-container {
+    background-color: $header_bg;
+}
+
+.material-playlist-container {
     background-color: $header_bg;
 }
 
