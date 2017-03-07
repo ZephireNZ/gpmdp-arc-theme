@@ -1,0 +1,419 @@
+$variant: 'dark';
+$transparency: 'false';
+$darker: 'false';
+
+@import "_colors";
+
+// General
+
+body {
+    color: $text_color;
+    background-color: $base_color !important;
+}
+
+a {
+    color: $text_color;
+    &:visited {
+        color: $text_color;
+    }
+}
+
+#dropShadow {
+    visibility: hidden;
+}
+
+// Home page
+
+#backgroundContainer {
+    #backgroundColor {
+        background-color: $base_color !important;
+    }
+
+    #backgroundImageContainer, & > #gradient {
+        visibility: hidden;
+    }
+}
+
+sj-home[selected] {
+    .home-palette-id-1, // Titles
+    .home-palette-id-2, // Subtitles
+    .home-palette-id-3, // Seperators
+    .home-palette-id-6 { // Page dots
+        color: $text_color !important;
+    }
+
+    .home-palette-id-5 { // Selected page dot
+        color: $selected_bg_color !important;
+    }
+}
+
+.gpm-now-card-grid-0, .gpm-now-card-grid-1 {
+    .buttons.gpm-now-card-grid paper-icon-button.gpm-now-card-grid {
+        color: $selected_fg_color;
+        background-color: $selected_bg_color;
+    }
+}
+
+
+// Wide cards
+
+.sj-card-0[card-aspect-ratio="wide"] {
+    background-color: $header_bg;
+
+    #details.sj-card > [slot="description"], #details.sj-card > [slot="title"] {
+        color: $text_color;
+    }
+}
+
+// Playlist drawer
+
+#playlist-drawer {
+    #drawer.sj-right-drawer {
+        background-color: $dark_sidebar_bg;
+
+        .paper-toolbar-1 {
+            background-color: $dark_sidebar_bg;
+        }
+    }
+
+    .autoplaylist-section, #recent-playlists-container {
+        border-bottom: 1px solid $dark_sidebar_border;
+    }
+
+    paper-header-panel paper-toolbar:not([style-scope]):not(.style-scope) {
+        border-bottom: 1px solid $dark_sidebar_border !important;
+    }
+}
+
+// Top bar
+
+#material-app-bar {
+    background-color: $header_bg !important;
+    color: $text_color;
+}
+
+paper-header-panel#content-container paper-toolbar#material-app-bar {
+    border-bottom: 1px solid darken($header_bg, 7%) !important;
+}
+
+// Nav drawer
+
+#nav_collections .nav-item-container:focus, .nav-item-container:focus, .nav-item-container:hover {
+    background-color: lighten($bg_color, 10%);
+    color: $text_color;
+}
+
+.paper-drawer-panel-0 iron-selector.paper-drawer-panel > #drawer.paper-drawer-panel{
+    background-color: $dark_sidebar_bg; //TODO: Transparancy to window
+    color: $dark_sidebar_fg;
+}
+
+#nav-container {
+    .nav-toolbar {
+        background-color: $dark_sidebar_bg;
+    }
+
+    .nav-section-divider {
+        border-bottom: 1px solid $dark_sidebar_border !important;
+    }
+
+    .nav-item-container {
+        &.selected:not([style-scope]):not(.style-scope), &.nav-item-container.selected iron-icon:not([style-scope]):not(.style-scope) {
+            color: $selected_fg_color;
+        }
+
+        &.selected {
+            background-color: $selected_bg_color;
+            color: $selected_fg_color;
+        }
+
+        &>iron-icon {
+            color: $text_color;
+        }
+
+        color: $text_color;
+    }
+}
+
+// Search Bar
+
+.sj-search-box-0, .sj-search-box-1 {
+    background-color: $header_entry_bg;
+    border-color: $header_entry_border;
+
+    #searchIcon.sj-search-box {
+        color: $text_color;
+    }
+
+    #input.sj-search-box::-webkit-input-placeholder {
+        color: $text_color; 
+    }
+}
+
+.sj-search-box-0, .sj-search-box-1 {
+    &[opened], &[has-query] {
+        background-color: $selected_bg_color;
+        #searchIcon.sj-search-box {
+            color: $selected_fg_color;
+        }
+    }
+
+    #clearButton.sj-search-box {
+        color: $selected_fg_color;
+    }
+
+    #input.sj-search-box {
+        color: $selected_fg_color;
+
+        &::-webkit-input-placeholder {
+            color: $selected_fg_color; 
+        }
+    }
+}
+
+// Player bar
+
+#player {
+    background-color: $header_bg;
+
+    paper-icon-button#player-bar-play-pause:not([style-scope]):not(.style-scope):not([disabled]) {
+        color: $selected_bg_color;
+
+        svg path:nth-child(2) {
+            fill: $header_bg;
+        }
+    }
+
+    .paper-progress-1, .paper-progress-2 {
+        #primaryProgress.paper-progress {
+            background-color: $selected_bg_color;
+        }
+    }
+
+    &:hover #material-player-progress:not([disabled]) #progressContainer {
+        background-color: $fg_color;
+    }
+
+    .paper-slider-0, .paper-slider-1 {
+        #sliderKnobInner.paper-slider {
+            background-color: $selected_bg_color;
+            border-color: $selected_bg_color;
+        }
+    }
+
+    paper-icon-button[data-id="repeat"].active:not([style-scope]):not(.style-scope), 
+    paper-icon-button[data-id="shuffle"].active:not([style-scope]):not(.style-scope), 
+    #exp-menu-shuffle.active:not([style-scope]):not(.style-scope), 
+    #exp-menu-repeat.active:not([style-scope]):not(.style-scope), 
+    #exp-menu-queue.opened:not([style-scope]):not(.style-scope), 
+    paper-icon-button[data-id="queue"].opened:not([style-scope]):not(.style-scope), 
+    paper-icon-button #exp-menu-queue.opened:not([style-scope]):not(.style-scope) {
+        color: $selected_bg_color;
+    }
+
+    .now-playing-actions paper-icon-button {
+        color: $fg_color;
+
+        &[title="Undo thumb-up"], &[title="Undo thumb-down"] {
+            color: $selected_bg_color;
+        }
+    }
+}
+
+// Library
+
+.paper-tabs-0 #selectionBar.paper-tabs {
+    background-color: $selected_bg_color;
+}
+
+// Song lists (Album, Artist, Playlist, Radio)
+
+.paper-fab-0 {
+    background-color: $selected_bg_color;
+
+    // fix incorrect fill in play button
+    svg path {
+        fill: $header_bg;
+    }
+}
+
+.material-detail-view {
+    .material-container-details .info .description {
+        color: $text_color;
+    }
+
+    .artist-details {
+        background-color: $header_bg;
+    }
+}
+
+.material .cluster-text-protection {
+    background-color: $base_color;
+    &::before {
+        background-color: $base_color;
+    }
+}
+
+.material-album-container {
+    background-color: $header_bg;
+}
+
+.songlist-container {
+    background-color: $header_bg;
+}
+
+.song-table th[data-col] {
+    iron-icon {
+        color: $header_fg !important;
+    }
+    color: $header_fg;
+}
+
+.song-row {
+    td {
+        background-color: $header_bg;
+        color: $text_color !important;
+    }
+
+    &.selected-song-row td, &:hover td {
+        background-color: lighten($header_bg, 10%) !important;
+    }
+
+    &.currently-playing td {
+        background-color: $selected_bg_color !important;
+        color: $selected_fg_color !important;
+
+        .song-artist-album a {
+            color: $selected_fg_color !important;
+        }
+    }
+
+    td[data-col="index"], td[data-col="track"] {
+        .hover-button[data-id="play"] {
+            color: $selected_bg_color;
+        }
+    }
+}
+
+.cluster .header .cluster-title, .section-header {
+    color: $text_color;
+}
+
+.material-detail-view .artist-details .bio-wrapper .bio {
+    color: $text_color;
+}
+
+iron-icon.primary:not([style-scope]):not(.style-scope) {
+    color: $selected_bg_color;
+}
+
+.primary:not([style-scope]):not(.style-scope) {
+    color: $selected_bg_color;
+}
+
+iron-icon[icon="av:explicit"] {
+    color: $selected_bg_color;
+}
+
+// Queue 
+
+#queue-overlay {
+    background-color: $header_bg;
+
+    .song-table.mini [data-col="song-details"] .song-title {
+        color: $text_color;
+    }
+}
+
+// Top Tracks
+
+.material-detail-view .top-tracks {
+    background-color: $header_bg;
+}
+
+.more-songs-container {
+    border-top: 1px solid darken($header_bg, 5%);
+}
+
+.top-charts-view .song-row [data-col="index"] .column-content:not([style-scope]):not(.style-scope) {
+    color: $selected_bg_color;
+}
+
+// Cards
+
+.material-card {
+    
+    background-color: $header_bg;
+
+    // Circle Images
+    &.entity-card .image-wrapper {
+        background-color: $header_bg;
+    }
+
+    // Menu button
+    .details paper-icon-button.menu-anchor {
+        color: $text_color;
+    }
+
+    // Square images
+    .sub-title {
+        color: $text_color;
+    }
+    .title {
+        color: $text_color;
+    }
+}
+
+.fade-out {
+    &.gray:after {
+        background: linear-gradient(to right, transparentize($base_color, 1), $base_color) !important;
+    } 
+    &:after {
+        background: linear-gradient(to right, transparentize($header_bg, 1), $header_bg) !important;
+    }
+}
+
+.paper-button-1 {
+    background-color: $selected_bg_color;
+    color: $selected_fg_color;
+}
+
+// Menus
+
+.goog-menu {
+    background-color: $dark_sidebar_bg;
+    border: 1px solid $dark_sidebar_border;
+
+    .goog-menuitem {
+        &:hover {
+            background-color: lighten($bg_color, 10%);
+        }
+
+        .goog-menuitem-content {
+            color: $dark_sidebar_fg !important;
+        }
+        background-color: $dark_sidebar_bg;
+    }
+
+    .goog-submenu iron-icon {
+        color: $dark_sidebar_fg;
+    }
+
+    .goog-menuseparator {
+        background-color: $dark_sidebar_border !important;
+    }
+
+    &.now-playing-menu {
+        border: 1px solid $dark_sidebar_border !important;
+    }
+}
+
+
+
+// Miscellaneous
+
+
+
+// sass --watch gpm-styles.scss:gpm-styles.css gpmdp-styles.scss:gpmdp-styles.css
+// python -m http.server 
+// $('head').insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="http://localhost:8000/gpm-styles.css">');

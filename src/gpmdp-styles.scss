@@ -1,0 +1,20 @@
+$variant: 'dark';
+$transparency: 'true';
+$darker: 'false';
+
+
+@import "_colors";
+
+.darwin-title-bar {
+    background-color: green;
+}
+
+.window-border {
+    .title-bar {
+        background-color: green;
+    }
+}
+
+.title-bar {
+    background-color: green;
+}

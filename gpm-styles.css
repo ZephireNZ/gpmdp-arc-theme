@@ -1,0 +1,225 @@
+body {
+  color: #D3DAE3;
+  background-color: #404552 !important; }
+
+a {
+  color: #D3DAE3; }
+  a:visited {
+    color: #D3DAE3; }
+
+#dropShadow {
+  visibility: hidden; }
+
+#backgroundContainer #backgroundColor {
+  background-color: #404552 !important; }
+#backgroundContainer #backgroundImageContainer, #backgroundContainer > #gradient {
+  visibility: hidden; }
+
+sj-home[selected] .home-palette-id-1,
+sj-home[selected] .home-palette-id-2,
+sj-home[selected] .home-palette-id-3,
+sj-home[selected] .home-palette-id-6 {
+  color: #D3DAE3 !important; }
+sj-home[selected] .home-palette-id-5 {
+  color: #5294e2 !important; }
+
+.gpm-now-card-grid-0 .buttons.gpm-now-card-grid paper-icon-button.gpm-now-card-grid, .gpm-now-card-grid-1 .buttons.gpm-now-card-grid paper-icon-button.gpm-now-card-grid {
+  color: #ffffff;
+  background-color: #5294e2; }
+
+.sj-card-0[card-aspect-ratio="wide"] {
+  background-color: #2f343f; }
+  .sj-card-0[card-aspect-ratio="wide"] #details.sj-card > [slot="description"], .sj-card-0[card-aspect-ratio="wide"] #details.sj-card > [slot="title"] {
+    color: #D3DAE3; }
+
+#playlist-drawer #drawer.sj-right-drawer {
+  background-color: #353945; }
+  #playlist-drawer #drawer.sj-right-drawer .paper-toolbar-1 {
+    background-color: #353945; }
+#playlist-drawer .autoplaylist-section, #playlist-drawer #recent-playlists-container {
+  border-bottom: 1px solid #2a2d37; }
+#playlist-drawer paper-header-panel paper-toolbar:not([style-scope]):not(.style-scope) {
+  border-bottom: 1px solid #2a2d37 !important; }
+
+#material-app-bar {
+  background-color: #2f343f !important;
+  color: #D3DAE3; }
+
+paper-header-panel#content-container paper-toolbar#material-app-bar {
+  border-bottom: 1px solid #20232b !important; }
+
+#nav_collections .nav-item-container:focus, .nav-item-container:focus, .nav-item-container:hover {
+  background-color: #4e5467;
+  color: #D3DAE3; }
+
+.paper-drawer-panel-0 iron-selector.paper-drawer-panel > #drawer.paper-drawer-panel {
+  background-color: #353945;
+  color: #BAC3CF; }
+
+#nav-container .nav-toolbar {
+  background-color: #353945; }
+#nav-container .nav-section-divider {
+  border-bottom: 1px solid #2a2d37 !important; }
+#nav-container .nav-item-container {
+  color: #D3DAE3; }
+  #nav-container .nav-item-container.selected:not([style-scope]):not(.style-scope), #nav-container .nav-item-container.nav-item-container.selected iron-icon:not([style-scope]):not(.style-scope) {
+    color: #ffffff; }
+  #nav-container .nav-item-container.selected {
+    background-color: #5294e2;
+    color: #ffffff; }
+  #nav-container .nav-item-container > iron-icon {
+    color: #D3DAE3; }
+
+.sj-search-box-0, .sj-search-box-1 {
+  background-color: rgba(95, 105, 127, 0.4);
+  border-color: rgba(21, 23, 28, 0.4); }
+  .sj-search-box-0 #searchIcon.sj-search-box, .sj-search-box-1 #searchIcon.sj-search-box {
+    color: #D3DAE3; }
+  .sj-search-box-0 #input.sj-search-box::-webkit-input-placeholder, .sj-search-box-1 #input.sj-search-box::-webkit-input-placeholder {
+    color: #D3DAE3; }
+
+.sj-search-box-0[opened], .sj-search-box-0[has-query], .sj-search-box-1[opened], .sj-search-box-1[has-query] {
+  background-color: #5294e2; }
+  .sj-search-box-0[opened] #searchIcon.sj-search-box, .sj-search-box-0[has-query] #searchIcon.sj-search-box, .sj-search-box-1[opened] #searchIcon.sj-search-box, .sj-search-box-1[has-query] #searchIcon.sj-search-box {
+    color: #ffffff; }
+.sj-search-box-0 #clearButton.sj-search-box, .sj-search-box-1 #clearButton.sj-search-box {
+  color: #ffffff; }
+.sj-search-box-0 #input.sj-search-box, .sj-search-box-1 #input.sj-search-box {
+  color: #ffffff; }
+  .sj-search-box-0 #input.sj-search-box::-webkit-input-placeholder, .sj-search-box-1 #input.sj-search-box::-webkit-input-placeholder {
+    color: #ffffff; }
+
+#player {
+  background-color: #2f343f; }
+  #player paper-icon-button#player-bar-play-pause:not([style-scope]):not(.style-scope):not([disabled]) {
+    color: #5294e2; }
+    #player paper-icon-button#player-bar-play-pause:not([style-scope]):not(.style-scope):not([disabled]) svg path:nth-child(2) {
+      fill: #2f343f; }
+  #player .paper-progress-1 #primaryProgress.paper-progress, #player .paper-progress-2 #primaryProgress.paper-progress {
+    background-color: #5294e2; }
+  #player:hover #material-player-progress:not([disabled]) #progressContainer {
+    background-color: #D3DAE3; }
+  #player .paper-slider-0 #sliderKnobInner.paper-slider, #player .paper-slider-1 #sliderKnobInner.paper-slider {
+    background-color: #5294e2;
+    border-color: #5294e2; }
+  #player paper-icon-button[data-id="repeat"].active:not([style-scope]):not(.style-scope),
+  #player paper-icon-button[data-id="shuffle"].active:not([style-scope]):not(.style-scope),
+  #player #exp-menu-shuffle.active:not([style-scope]):not(.style-scope),
+  #player #exp-menu-repeat.active:not([style-scope]):not(.style-scope),
+  #player #exp-menu-queue.opened:not([style-scope]):not(.style-scope),
+  #player paper-icon-button[data-id="queue"].opened:not([style-scope]):not(.style-scope),
+  #player paper-icon-button #exp-menu-queue.opened:not([style-scope]):not(.style-scope) {
+    color: #5294e2; }
+  #player .now-playing-actions paper-icon-button {
+    color: #D3DAE3; }
+    #player .now-playing-actions paper-icon-button[title="Undo thumb-up"], #player .now-playing-actions paper-icon-button[title="Undo thumb-down"] {
+      color: #5294e2; }
+
+.paper-tabs-0 #selectionBar.paper-tabs {
+  background-color: #5294e2; }
+
+.paper-fab-0 {
+  background-color: #5294e2; }
+  .paper-fab-0 svg path {
+    fill: #2f343f; }
+
+.material-detail-view .material-container-details .info .description {
+  color: #D3DAE3; }
+.material-detail-view .artist-details {
+  background-color: #2f343f; }
+
+.material .cluster-text-protection {
+  background-color: #404552; }
+  .material .cluster-text-protection::before {
+    background-color: #404552; }
+
+.material-album-container {
+  background-color: #2f343f; }
+
+.songlist-container {
+  background-color: #2f343f; }
+
+.song-table th[data-col] {
+  color: rgba(207, 218, 231, 0.8); }
+  .song-table th[data-col] iron-icon {
+    color: rgba(207, 218, 231, 0.8) !important; }
+
+.song-row td {
+  background-color: #2f343f;
+  color: #D3DAE3 !important; }
+.song-row.selected-song-row td, .song-row:hover td {
+  background-color: #454c5c !important; }
+.song-row.currently-playing td {
+  background-color: #5294e2 !important;
+  color: #ffffff !important; }
+  .song-row.currently-playing td .song-artist-album a {
+    color: #ffffff !important; }
+.song-row td[data-col="index"] .hover-button[data-id="play"], .song-row td[data-col="track"] .hover-button[data-id="play"] {
+  color: #5294e2; }
+
+.cluster .header .cluster-title, .section-header {
+  color: #D3DAE3; }
+
+.material-detail-view .artist-details .bio-wrapper .bio {
+  color: #D3DAE3; }
+
+iron-icon.primary:not([style-scope]):not(.style-scope) {
+  color: #5294e2; }
+
+.primary:not([style-scope]):not(.style-scope) {
+  color: #5294e2; }
+
+iron-icon[icon="av:explicit"] {
+  color: #5294e2; }
+
+#queue-overlay {
+  background-color: #2f343f; }
+  #queue-overlay .song-table.mini [data-col="song-details"] .song-title {
+    color: #D3DAE3; }
+
+.material-detail-view .top-tracks {
+  background-color: #2f343f; }
+
+.more-songs-container {
+  border-top: 1px solid #242830; }
+
+.top-charts-view .song-row [data-col="index"] .column-content:not([style-scope]):not(.style-scope) {
+  color: #5294e2; }
+
+.material-card {
+  background-color: #2f343f; }
+  .material-card.entity-card .image-wrapper {
+    background-color: #2f343f; }
+  .material-card .details paper-icon-button.menu-anchor {
+    color: #D3DAE3; }
+  .material-card .sub-title {
+    color: #D3DAE3; }
+  .material-card .title {
+    color: #D3DAE3; }
+
+.fade-out.gray:after {
+  background: linear-gradient(to right, rgba(64, 69, 82, 0), #404552) !important; }
+.fade-out:after {
+  background: linear-gradient(to right, rgba(47, 52, 63, 0), #2f343f) !important; }
+
+.paper-button-1 {
+  background-color: #5294e2;
+  color: #ffffff; }
+
+.goog-menu {
+  background-color: #353945;
+  border: 1px solid #2a2d37; }
+  .goog-menu .goog-menuitem {
+    background-color: #353945; }
+    .goog-menu .goog-menuitem:hover {
+      background-color: #4e5467; }
+    .goog-menu .goog-menuitem .goog-menuitem-content {
+      color: #BAC3CF !important; }
+  .goog-menu .goog-submenu iron-icon {
+    color: #BAC3CF; }
+  .goog-menu .goog-menuseparator {
+    background-color: #2a2d37 !important; }
+  .goog-menu.now-playing-menu {
+    border: 1px solid #2a2d37 !important; }
+
+/*# sourceMappingURL=gpm-styles.css.map */
