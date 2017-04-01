@@ -44,10 +44,10 @@ sj-home[selected] .home-palette-id-5 {
   color: #ffffff;
   background-color: #5294e2; }
 
-.sj-card-0[card-aspect-ratio="wide"] {
+.sj-card-0 [card-aspect-ratio="wide"] {
   background-color: #2f343f; }
-  .sj-card-0[card-aspect-ratio="wide"] #details.sj-card > [slot="description"], .sj-card-0[card-aspect-ratio="wide"] #details.sj-card > [slot="title"] {
-    color: #D3DAE3; }
+.sj-card-0 #details.sj-card > [slot="description"], .sj-card-0 #details.sj-card > [slot="title"], .sj-card-0 #details.sj-card > [slot="subtitle"], .sj-card-0[card-aspect-ratio="wide"] #details.sj-card > [slot="description"], .sj-card-0[card-aspect-ratio="wide"] #details.sj-card > [slot="title"], .sj-card-0[card-aspect-ratio="wide"] #details.sj-card > [slot="subtitle"] {
+  color: #D3DAE3; }
 
 #playlist-drawer #drawer.sj-right-drawer {
   background-color: #353945; }
@@ -201,6 +201,9 @@ iron-icon.primary:not([style-scope]):not(.style-scope) {
 
 iron-icon[icon="av:explicit"] {
   color: #5294e2; }
+
+.gpm-card-grid-0 #gridTitle, .gpm-card-grid-3 #gridTitle {
+  color: #D3DAE3; }
 
 #queue-overlay {
   background-color: #2f343f; }

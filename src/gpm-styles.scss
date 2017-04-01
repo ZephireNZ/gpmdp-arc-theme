@@ -55,13 +55,20 @@ sj-home[selected] {
 }
 
 
-// Wide cards
+// Cards
 
-.sj-card-0[card-aspect-ratio="wide"] {
-    background-color: $header_bg;
+.sj-card-0 {
 
-    #details.sj-card > [slot="description"], #details.sj-card > [slot="title"] {
-        color: $text_color;
+    [card-aspect-ratio="wide"] {
+        background-color: $header_bg;
+    }
+
+    &, &[card-aspect-ratio="wide"] {
+        #details.sj-card {
+            & > [slot="description"], & > [slot="title"], & > [slot="subtitle"] {
+                color: $text_color;
+            }
+        }
     }
 }
 
@@ -343,6 +350,15 @@ iron-icon[icon="av:explicit"] {
     color: $selected_bg_color;
 }
 
+// Recents
+
+.gpm-card-grid-0, .gpm-card-grid-3 {
+
+    #gridTitle {
+        color: $text_color;
+    }
+}
+
 // Queue 
 
 #queue-overlay {
@@ -442,6 +458,6 @@ iron-icon[icon="av:explicit"] {
 
 
 
-// sass --watch gpm-styles.scss:gpm-styles.css gpmdp-styles.scss:gpmdp-styles.css
+// sass --watch src/gpm-styles.scss:gpm-styles.css src/gpmdp-styles.scss:gpmdp-styles.css
 // python -m http.server 
 // $('head').insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="http://localhost:8000/gpm-styles.css">');
