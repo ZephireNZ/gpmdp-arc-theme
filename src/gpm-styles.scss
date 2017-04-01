@@ -461,6 +461,11 @@ iron-icon[icon="av:explicit"] {
     }
 }
 
+// Loading Spinner
+
+.paper-spinner-lite-1 .spinner-layer.paper-spinner-lite {
+    border-color: $selected_bg_color;
+}
 
 
 // Miscellaneous

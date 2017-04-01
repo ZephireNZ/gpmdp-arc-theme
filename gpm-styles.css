@@ -261,4 +261,7 @@ iron-icon[icon="av:explicit"] {
   .goog-menu.now-playing-menu {
     border: 1px solid #2a2d37 !important; }
 
+.paper-spinner-lite-1 .spinner-layer.paper-spinner-lite {
+  border-color: #5294e2; }
+
 /*# sourceMappingURL=gpm-styles.css.map */
