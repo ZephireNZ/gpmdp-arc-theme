@@ -98,8 +98,14 @@ sj-home[selected] {
     color: $text_color;
 }
 
-paper-header-panel#content-container paper-toolbar#material-app-bar {
-    border-bottom: 1px solid darken($header_bg, 7%) !important;
+paper-header-panel#content-container  {
+    &.has-hero-image #app-bar-text-protection {
+        visibility: hidden;
+    }
+    paper-toolbar#material-app-bar {
+        border-bottom: 1px solid darken($header_bg, 7%) !important;
+        color: $text_color !important;
+    }
 }
 
 // Nav drawer
