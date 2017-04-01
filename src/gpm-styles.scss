@@ -58,8 +58,7 @@ sj-home[selected] {
 // Cards
 
 .sj-card-0 {
-
-    [card-aspect-ratio="wide"] {
+    &[card-aspect-ratio="wide"] {
         background-color: $header_bg;
     }
 
