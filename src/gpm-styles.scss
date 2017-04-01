@@ -232,8 +232,8 @@ paper-header-panel#content-container  {
 
     .paper-slider-0, .paper-slider-1 {
         #sliderKnobInner.paper-slider {
-            background-color: $selected_bg_color;
-            border-color: $selected_bg_color;
+            background-color: $selected_bg_color !important;
+            border-color: $selected_bg_color !important;
         }
     }
 

@@ -130,8 +130,8 @@ paper-header-panel#content-container paper-toolbar#material-app-bar {
   #player:hover #material-player-progress:not([disabled]) #progressContainer {
     background-color: #D3DAE3; }
   #player .paper-slider-0 #sliderKnobInner.paper-slider, #player .paper-slider-1 #sliderKnobInner.paper-slider {
-    background-color: #5294e2;
-    border-color: #5294e2; }
+    background-color: #5294e2 !important;
+    border-color: #5294e2 !important; }
   #player paper-icon-button[data-id="repeat"].active:not([style-scope]):not(.style-scope),
   #player paper-icon-button[data-id="shuffle"].active:not([style-scope]):not(.style-scope),
   #player #exp-menu-shuffle.active:not([style-scope]):not(.style-scope),
