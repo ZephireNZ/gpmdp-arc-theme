@@ -71,8 +71,6 @@ sj-home[selected] {
     }
 }
 
-// Playlist drawer
-
 #playlist-drawer {
     #drawer.sj-right-drawer {
         background-color: $dark_sidebar_bg;
@@ -88,6 +86,31 @@ sj-home[selected] {
 
     paper-header-panel paper-toolbar:not([style-scope]):not(.style-scope) {
         border-bottom: 1px solid $dark_sidebar_border !important;
+    }
+
+    .playlist-drawer-item {
+        &.playlist-drop-target .playlist-wrapper .playlist-title:not([style-scope]):not(.style-scope) {
+            color: $selected_bg_color;
+        }
+
+        sj-play-button:hover,  iron-icon:hover {
+            & ~ .playlist-wrapper {
+                background-color: lighten($bg_color, 10%);
+                color: $text_color;
+            }
+        }
+
+        .playlist-wrapper {
+            &:hover, &:focus {
+                background-color: lighten($bg_color, 10%);
+                color: $text_color;
+            }
+        }
+
+        &.playlist-drop-target:not(.subscribed) .playlist-wrapper {
+            background-color: lighten($bg_color, 10%);
+            color: $text_color;
+        }
     }
 }
 
@@ -475,6 +498,12 @@ iron-icon[icon="av:explicit"] {
 
 .paper-spinner-lite-1 .spinner-layer.paper-spinner-lite {
     border-color: $selected_bg_color;
+}
+
+// Drag-and-drop
+.material-drag.tight-song-row .song-drag-label {
+    background-color: $selected_bg_color;
+    color: $selected_fg_color;
 }
 
 
