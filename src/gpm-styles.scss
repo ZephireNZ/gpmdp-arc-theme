@@ -274,8 +274,18 @@ paper-header-panel#content-container  {
 }
 
 .material-detail-view {
-    .material-container-details .info .description {
-        color: $text_color;
+    .material-container-details .info {
+
+        .container-stats-container .container-stats {
+            color: $text_color;
+            span {
+                color: $text_color;
+            }
+        }
+
+        .description {
+            color: $text_color;
+        }
     }
 
     .artist-details {

@@ -153,6 +153,10 @@ paper-header-panel#content-container paper-toolbar#material-app-bar {
   .paper-fab-0 svg path {
     fill: #2f343f; }
 
+.material-detail-view .material-container-details .info .container-stats-container .container-stats {
+  color: #D3DAE3; }
+  .material-detail-view .material-container-details .info .container-stats-container .container-stats span {
+    color: #D3DAE3; }
 .material-detail-view .material-container-details .info .description {
   color: #D3DAE3; }
 .material-detail-view .artist-details {
