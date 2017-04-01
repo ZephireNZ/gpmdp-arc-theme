@@ -17,6 +17,12 @@ TODO
 - Change GPMDP UI colors, especially in the settings
 - Settings page
 - Stations page
-- Edit sprite colors
+- station page
+- Edit sprite colors - thumbs, logo, 
 - Play Music logo
 - Google user popup
+- Scrubber at the start turns orange
+- Search dropdown with text entered
+- Playlist menu icons, highlight
+- trash
+- page load spinner (eg click on playlist from right)
