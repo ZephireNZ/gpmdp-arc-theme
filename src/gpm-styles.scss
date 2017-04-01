@@ -303,6 +303,10 @@ paper-header-panel#content-container paper-toolbar#material-app-bar {
     color: $header_fg;
 }
 
+paper-drawer-panel iron-image#material-hero-image {
+    visibility: hidden;
+}
+
 .song-row {
     td {
         background-color: $header_bg;
