@@ -437,6 +437,15 @@ iron-icon[icon="av:explicit"] {
     color: $selected_bg_color;
 }
 
+.subcategories-list {
+    background-color: $header_bg;
+
+    li a:hover, .material-list li a:focus {
+        background-color: lighten($header_bg, 10%);
+        color: $header_fg;
+    }
+}
+
 // Recents
 
 .gpm-card-grid-0, .gpm-card-grid-3 {

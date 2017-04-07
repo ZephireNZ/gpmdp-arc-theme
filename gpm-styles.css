@@ -244,6 +244,12 @@ iron-icon.primary:not([style-scope]):not(.style-scope) {
 iron-icon[icon="av:explicit"] {
   color: #5294e2; }
 
+.subcategories-list {
+  background-color: #2f343f; }
+  .subcategories-list li a:hover, .subcategories-list .material-list li a:focus {
+    background-color: #454c5c;
+    color: rgba(207, 218, 231, 0.8); }
+
 .gpm-card-grid-0 #gridTitle, .gpm-card-grid-3 #gridTitle {
   color: #D3DAE3; }
 
