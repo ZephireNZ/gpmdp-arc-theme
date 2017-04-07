@@ -129,6 +129,23 @@ paper-header-panel#content-container paper-toolbar#material-app-bar {
     color: #D3DAE3; }
   .sj-search-box-0 .sj-search-suggestion-0 #queryText.sj-search-suggestion, .sj-search-box-0 .sj-search-suggestion-0 iron-icon.sj-search-suggestion, .sj-search-box-1 .sj-search-suggestion-0 #queryText.sj-search-suggestion, .sj-search-box-1 .sj-search-suggestion-0 iron-icon.sj-search-suggestion {
     color: #D3DAE3; }
+  .sj-search-box-0 .sj-entity-suggestion-0 #title.sj-entity-suggestion, .sj-search-box-0 .sj-entity-suggestion-0 #subtitle.sj-entity-suggestion, .sj-search-box-1 .sj-entity-suggestion-0 #title.sj-entity-suggestion, .sj-search-box-1 .sj-entity-suggestion-0 #subtitle.sj-entity-suggestion {
+    color: #D3DAE3; }
+  .sj-search-box-0 .sj-entity-suggestion-0.sj-search-box:last-of-type, .sj-search-box-1 .sj-entity-suggestion-0.sj-search-box:last-of-type {
+    border-bottom: 7px solid transparent !important;
+    margin-bottom: 7px !important;
+    box-shadow: 0px 1px 0px 0px rgba(21, 23, 28, 0.4) !important; }
+  .sj-search-box-0 .sj-entity-suggestion-0:hover, .sj-search-box-0 .sj-entity-suggestion-0.query-selected, .sj-search-box-1 .sj-entity-suggestion-0:hover, .sj-search-box-1 .sj-entity-suggestion-0.query-selected {
+    background-color: #454c5c;
+    color: #D3DAE3; }
+  .sj-search-box-0 .sj-entity-suggestion-0 sj-play-button #buttonContent.sj-play-button, .sj-search-box-1 .sj-entity-suggestion-0 sj-play-button #buttonContent.sj-play-button {
+    background-color: #5294e2; }
+    .sj-search-box-0 .sj-entity-suggestion-0 sj-play-button #buttonContent.sj-play-button path, .sj-search-box-1 .sj-entity-suggestion-0 sj-play-button #buttonContent.sj-play-button path {
+      fill: #454c5c; }
+  .sj-search-box-0 .sj-entity-suggestion-0 sj-play-button .paper-spinner-lite-16 .spinner-layer.paper-spinner-lite, .sj-search-box-0 .sj-entity-suggestion-0 sj-play-button .paper-spinner-lite-17 .spinner-layer.paper-spinner-lite, .sj-search-box-1 .sj-entity-suggestion-0 sj-play-button .paper-spinner-lite-16 .spinner-layer.paper-spinner-lite, .sj-search-box-1 .sj-entity-suggestion-0 sj-play-button .paper-spinner-lite-17 .spinner-layer.paper-spinner-lite {
+    border-color: #ffffff; }
+  .sj-search-box-0 .sj-search-suggestion-0 #queryText.sj-search-suggestion .sub-match.sj-search-suggestion, .sj-search-box-1 .sj-search-suggestion-0 #queryText.sj-search-suggestion .sub-match.sj-search-suggestion {
+    color: #5294e2; }
 
 #player {
   background-color: #2f343f; }
@@ -140,9 +157,13 @@ paper-header-panel#content-container paper-toolbar#material-app-bar {
     background-color: #5294e2; }
   #player:hover #material-player-progress:not([disabled]) #progressContainer {
     background-color: #D3DAE3; }
-  #player .paper-slider-0 #sliderKnobInner.paper-slider, #player .paper-slider-1 #sliderKnobInner.paper-slider {
-    background-color: #5294e2 !important;
-    border-color: #5294e2 !important; }
+  #player .paper-slider-0 .ring.paper-slider > .slider-knob.paper-slider > .slider-knob-inner.paper-slider, #player .paper-slider-1 .ring.paper-slider > .slider-knob.paper-slider > .slider-knob-inner.paper-slider {
+    background-color: #5294e2; }
+  #player .paper-slider-0 .slider-knob-inner.paper-slider, #player .paper-slider-1 .slider-knob-inner.paper-slider {
+    background-color: #5294e2;
+    border-color: #5294e2; }
+  #player .paper-slider-0 paper-ripple.paper-slider, #player .paper-slider-1 paper-ripple.paper-slider {
+    color: #5294e2; }
   #player paper-icon-button[data-id="repeat"].active:not([style-scope]):not(.style-scope),
   #player paper-icon-button[data-id="shuffle"].active:not([style-scope]):not(.style-scope),
   #player #exp-menu-shuffle.active:not([style-scope]):not(.style-scope),
@@ -250,6 +271,10 @@ iron-icon[icon="av:explicit"] {
     color: #D3DAE3; }
   .material-card .title {
     color: #D3DAE3; }
+  .material-card[data-is-listen-now="true"] .details {
+    background-color: #5294e2; }
+    .material-card[data-is-listen-now="true"] .details * {
+      color: #ffffff; }
 
 .fade-out.gray:after {
   background: linear-gradient(to right, rgba(64, 69, 82, 0), #404552) !important; }
