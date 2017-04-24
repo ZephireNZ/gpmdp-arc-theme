@@ -15,6 +15,10 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 **/
+/**
+Repeats a selector through a sequence of numbers, ie
+foo-bar-1, foo-bar-2, foo-bar-3
+**/
 body {
   color: #D3DAE3;
   background-color: #404552 !important; }
@@ -138,12 +142,6 @@ paper-header-panel#content-container paper-toolbar#material-app-bar {
   .sj-search-box-0 .sj-entity-suggestion-0:hover, .sj-search-box-0 .sj-entity-suggestion-0.query-selected, .sj-search-box-1 .sj-entity-suggestion-0:hover, .sj-search-box-1 .sj-entity-suggestion-0.query-selected {
     background-color: #454c5c;
     color: #D3DAE3; }
-  .sj-search-box-0 .sj-entity-suggestion-0 sj-play-button #buttonContent.sj-play-button, .sj-search-box-1 .sj-entity-suggestion-0 sj-play-button #buttonContent.sj-play-button {
-    background-color: #5294e2; }
-    .sj-search-box-0 .sj-entity-suggestion-0 sj-play-button #buttonContent.sj-play-button path, .sj-search-box-1 .sj-entity-suggestion-0 sj-play-button #buttonContent.sj-play-button path {
-      fill: #454c5c; }
-  .sj-search-box-0 .sj-entity-suggestion-0 sj-play-button .paper-spinner-lite-16 .spinner-layer.paper-spinner-lite, .sj-search-box-0 .sj-entity-suggestion-0 sj-play-button .paper-spinner-lite-17 .spinner-layer.paper-spinner-lite, .sj-search-box-1 .sj-entity-suggestion-0 sj-play-button .paper-spinner-lite-16 .spinner-layer.paper-spinner-lite, .sj-search-box-1 .sj-entity-suggestion-0 sj-play-button .paper-spinner-lite-17 .spinner-layer.paper-spinner-lite {
-    border-color: #ffffff; }
   .sj-search-box-0 .sj-search-suggestion-0 #queryText.sj-search-suggestion .sub-match.sj-search-suggestion, .sj-search-box-1 .sj-search-suggestion-0 #queryText.sj-search-suggestion .sub-match.sj-search-suggestion {
     color: #5294e2; }
 
@@ -250,6 +248,24 @@ iron-icon[icon="av:explicit"] {
     background-color: #454c5c;
     color: rgba(207, 218, 231, 0.8); }
 
+.gpm-detail-page-header-0 div.gpm-detail-page-header > [slot="title"], .gpm-detail-page-header-0 div.gpm-detail-page-header > [slot="subtitle"], .gpm-detail-page-header-0 div.gpm-detail-page-header > [slot="description"], .gpm-detail-page-header-0 div.gpm-detail-page-header > [slot="metadata"], .gpm-detail-page-header-0 div.gpm-detail-page-header > [slot="buttons"] {
+  color: #D3DAE3; }
+.gpm-detail-page-header-0 div.gpm-detail-page-header #explicitIcon.gpm-detail-page-header {
+  color: #5294e2; }
+.gpm-detail-page-header-0[description-overflows] #descriptionWrapper.gpm-detail-page-header:hover {
+  background: none; }
+  .gpm-detail-page-header-0[description-overflows] #descriptionWrapper.gpm-detail-page-header:hover > [slot="description"] {
+    color: #5294e2; }
+
+.sj-play-button-0, .sj-play-button-1, .sj-play-button-2, .sj-play-button-3, .sj-play-button-4, .sj-play-button-5, .sj-play-button-6, .sj-play-button-7, .sj-play-button-8, .sj-play-button-9, .sj-play-button-10 {
+  color: #2f343f; }
+  .sj-play-button-0 #buttonContent.sj-play-button, .sj-play-button-1 #buttonContent.sj-play-button, .sj-play-button-2 #buttonContent.sj-play-button, .sj-play-button-3 #buttonContent.sj-play-button, .sj-play-button-4 #buttonContent.sj-play-button, .sj-play-button-5 #buttonContent.sj-play-button, .sj-play-button-6 #buttonContent.sj-play-button, .sj-play-button-7 #buttonContent.sj-play-button, .sj-play-button-8 #buttonContent.sj-play-button, .sj-play-button-9 #buttonContent.sj-play-button, .sj-play-button-10 #buttonContent.sj-play-button {
+    background-color: #5294e2; }
+  .sj-play-button-0 #pulse.sj-play-button, .sj-play-button-1 #pulse.sj-play-button, .sj-play-button-2 #pulse.sj-play-button, .sj-play-button-3 #pulse.sj-play-button, .sj-play-button-4 #pulse.sj-play-button, .sj-play-button-5 #pulse.sj-play-button, .sj-play-button-6 #pulse.sj-play-button, .sj-play-button-7 #pulse.sj-play-button, .sj-play-button-8 #pulse.sj-play-button, .sj-play-button-9 #pulse.sj-play-button, .sj-play-button-10 #pulse.sj-play-button {
+    background-color: rgba(82, 148, 226, 0.7); }
+  .sj-play-button-0 .spinner-layer.paper-spinner-lite, .sj-play-button-1 .spinner-layer.paper-spinner-lite, .sj-play-button-2 .spinner-layer.paper-spinner-lite, .sj-play-button-3 .spinner-layer.paper-spinner-lite, .sj-play-button-4 .spinner-layer.paper-spinner-lite, .sj-play-button-5 .spinner-layer.paper-spinner-lite, .sj-play-button-6 .spinner-layer.paper-spinner-lite, .sj-play-button-7 .spinner-layer.paper-spinner-lite, .sj-play-button-8 .spinner-layer.paper-spinner-lite, .sj-play-button-9 .spinner-layer.paper-spinner-lite, .sj-play-button-10 .spinner-layer.paper-spinner-lite {
+    border-color: #ffffff; }
+
 .gpm-card-grid-0 #gridTitle, .gpm-card-grid-3 #gridTitle {
   color: #D3DAE3; }
 
@@ -258,7 +274,7 @@ iron-icon[icon="av:explicit"] {
   #queue-overlay .song-table.mini [data-col="song-details"] .song-title {
     color: #D3DAE3; }
 
-.material-detail-view .top-tracks {
+.top-tracks {
   background-color: #2f343f; }
 
 .more-songs-container {

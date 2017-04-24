@@ -3,6 +3,7 @@ $transparency: 'false';
 $darker: 'false';
 
 @import "_colors";
+@import "_utils";
 
 // General
 
@@ -244,22 +245,6 @@ paper-header-panel#content-container  {
             background-color: lighten($header_bg, 10%);
             color: $text_color;
         }
-
-        sj-play-button {
-            #buttonContent.sj-play-button {
-                background-color: $selected_bg_color;
-
-                path {
-                    fill: lighten($header_bg, 10%);
-                }
-            }
-
-            .paper-spinner-lite-16, .paper-spinner-lite-17 {
-                .spinner-layer.paper-spinner-lite {
-                    border-color: $selected_fg_color;
-                }
-            }
-        }
     }
 
     .sj-search-suggestion-0 #queryText.sj-search-suggestion .sub-match.sj-search-suggestion {
@@ -446,6 +431,41 @@ iron-icon[icon="av:explicit"] {
     }
 }
 
+.gpm-detail-page-header-0 {
+    div.gpm-detail-page-header {
+        & > [slot="title"], & > [slot="subtitle"], & > [slot="description"], & > [slot="metadata"], & > [slot="buttons"] {
+            color: $text_color;
+        }
+
+        #explicitIcon.gpm-detail-page-header {
+            color: $selected_bg_color;
+        }
+    }
+
+    &[description-overflows] #descriptionWrapper.gpm-detail-page-header:hover {
+        background: none;
+        & > [slot="description"] {
+            color: $selected_bg_color;
+        }
+    }
+}
+
+@include numbered-types(".sj-play-button-", 0, 10) {
+    color: $header_bg;
+
+    #buttonContent.sj-play-button {
+        background-color: $selected_bg_color;
+    }
+
+    #pulse.sj-play-button {
+        background-color: transparentize($selected_bg_color, 0.3);
+    }
+
+    .spinner-layer.paper-spinner-lite {
+        border-color: $selected_fg_color;
+    }
+}
+
 // Recents
 
 .gpm-card-grid-0, .gpm-card-grid-3 {
@@ -467,7 +487,7 @@ iron-icon[icon="av:explicit"] {
 
 // Top Tracks
 
-.material-detail-view .top-tracks {
+.top-tracks {
     background-color: $header_bg;
 }
 

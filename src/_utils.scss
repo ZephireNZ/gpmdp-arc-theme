@@ -1,0 +1,15 @@
+/**
+Repeats a selector through a sequence of numbers, ie
+foo-bar-1, foo-bar-2, foo-bar-3
+**/
+@mixin numbered-types($qualifier, $start, $end, $after-qualifier: "") {
+    $selectors: ();
+    @for $i from $start through $end {
+        $selector: #{$qualifier}#{$i}#{$after-qualifier};
+        $selectors: append($selectors, $selector, comma);
+    }
+
+    #{$selectors} {
+        @content;
+    }
+}
