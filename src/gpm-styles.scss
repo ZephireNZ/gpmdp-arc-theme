@@ -5,6 +5,11 @@ $darker: 'false';
 @import "_colors";
 @import "_utils";
 
+// Custom Colors
+
+$dark_sidebar_highlight: lighten($bg_color, 10%);
+
+
 // General
 
 body {
@@ -106,7 +111,7 @@ sj-home[selected] {
 
         sj-play-button:hover,  iron-icon:hover {
             & ~ .playlist-wrapper {
-                background-color: lighten($bg_color, 10%);
+                background-color: $dark_sidebar_highlight;
                 color: $text_color;
             }
         }
@@ -115,13 +120,13 @@ sj-home[selected] {
             color: $dark_sidebar_fg;
 
             &:hover, &:focus {
-                background-color: lighten($bg_color, 10%);
+                background-color: $dark_sidebar_highlight;
                 color: $text_color;
             }
         }
 
         &.playlist-drop-target:not(.subscribed) .playlist-wrapper {
-            background-color: lighten($bg_color, 10%);
+            background-color: $dark_sidebar_highlight;
             color: $text_color;
         }
     }
@@ -147,7 +152,7 @@ paper-header-panel#content-container  {
 // Nav drawer
 
 #nav_collections .nav-item-container:focus, .nav-item-container:focus, .nav-item-container:hover {
-    background-color: lighten($bg_color, 10%);
+    background-color: $dark_sidebar_highlight;
     color: $text_color;
 }
 
@@ -569,7 +574,7 @@ iron-icon[icon="av:explicit"] {
 
     .goog-menuitem {
         &:hover {
-            background-color: lighten($bg_color, 10%);
+            background-color: $dark_sidebar_highlight;
         }
 
         .goog-menuitem-content {
@@ -662,7 +667,7 @@ iron-icon[icon="av:explicit"] {
                 visibility: hidden;
             }
 
-            background-color: lighten($bg_color, 10%);
+            background-color: $dark_sidebar_highlight;
         }
     }
 
