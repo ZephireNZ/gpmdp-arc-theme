@@ -61,14 +61,20 @@ sj-home[selected] .home-palette-id-5 {
   border-bottom: 1px solid #2a2d37; }
 #playlist-drawer paper-header-panel paper-toolbar:not([style-scope]):not(.style-scope) {
   border-bottom: 1px solid #2a2d37 !important; }
+#playlist-drawer #mainPanel iron-icon {
+  color: #BAC3CF; }
+#playlist-drawer #auto-playlists-header, #playlist-drawer #recent-playlists-header, #playlist-drawer #playlists-header, #playlist-drawer #playlist-drawer-header {
+  color: #BAC3CF; }
 #playlist-drawer .playlist-drawer-item.playlist-drop-target .playlist-wrapper .playlist-title:not([style-scope]):not(.style-scope) {
-  color: #5294e2; }
+  color: #BAC3CF; }
 #playlist-drawer .playlist-drawer-item sj-play-button:hover ~ .playlist-wrapper, #playlist-drawer .playlist-drawer-item iron-icon:hover ~ .playlist-wrapper {
   background-color: #4e5467;
   color: #D3DAE3; }
-#playlist-drawer .playlist-drawer-item .playlist-wrapper:hover, #playlist-drawer .playlist-drawer-item .playlist-wrapper:focus {
-  background-color: #4e5467;
-  color: #D3DAE3; }
+#playlist-drawer .playlist-drawer-item .playlist-wrapper {
+  color: #BAC3CF; }
+  #playlist-drawer .playlist-drawer-item .playlist-wrapper:hover, #playlist-drawer .playlist-drawer-item .playlist-wrapper:focus {
+    background-color: #4e5467;
+    color: #D3DAE3; }
 #playlist-drawer .playlist-drawer-item.playlist-drop-target:not(.subscribed) .playlist-wrapper {
   background-color: #4e5467;
   color: #D3DAE3; }
@@ -96,14 +102,14 @@ paper-header-panel#content-container paper-toolbar#material-app-bar {
 #nav-container .nav-section-divider {
   border-bottom: 1px solid #2a2d37 !important; }
 #nav-container .nav-item-container {
-  color: #D3DAE3; }
+  color: #BAC3CF; }
   #nav-container .nav-item-container.selected:not([style-scope]):not(.style-scope), #nav-container .nav-item-container.nav-item-container.selected iron-icon:not([style-scope]):not(.style-scope) {
     color: #ffffff; }
   #nav-container .nav-item-container.selected {
     background-color: #5294e2;
     color: #ffffff; }
   #nav-container .nav-item-container > iron-icon {
-    color: #D3DAE3; }
+    color: #BAC3CF; }
 
 .sj-search-box-0, .sj-search-box-1 {
   border-color: 1px solid rgba(21, 23, 28, 0.4);

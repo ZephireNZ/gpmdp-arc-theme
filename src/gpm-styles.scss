@@ -72,6 +72,8 @@ sj-home[selected] {
     }
 }
 
+// Playlists Sidebar
+
 #playlist-drawer {
     #drawer.sj-right-drawer {
         background-color: $dark_sidebar_bg;
@@ -89,9 +91,17 @@ sj-home[selected] {
         border-bottom: 1px solid $dark_sidebar_border !important;
     }
 
+    #mainPanel iron-icon {
+        color: $dark_sidebar_fg;
+    }
+
+    #auto-playlists-header, #recent-playlists-header, #playlists-header, #playlist-drawer-header {
+        color: $dark_sidebar_fg;
+    }
+
     .playlist-drawer-item {
         &.playlist-drop-target .playlist-wrapper .playlist-title:not([style-scope]):not(.style-scope) {
-            color: $selected_bg_color;
+            color: $dark_sidebar_fg;
         }
 
         sj-play-button:hover,  iron-icon:hover {
@@ -102,6 +112,8 @@ sj-home[selected] {
         }
 
         .playlist-wrapper {
+            color: $dark_sidebar_fg;
+
             &:hover, &:focus {
                 background-color: lighten($bg_color, 10%);
                 color: $text_color;
@@ -164,10 +176,10 @@ paper-header-panel#content-container  {
         }
 
         &>iron-icon {
-            color: $text_color;
+            color: $dark_sidebar_fg;
         }
 
-        color: $text_color;
+        color: $dark_sidebar_fg;
     }
 }
 
