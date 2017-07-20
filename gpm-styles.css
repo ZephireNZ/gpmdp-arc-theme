@@ -187,7 +187,7 @@ paper-header-panel#content-container paper-toolbar#material-app-bar {
     #player .now-playing-actions paper-icon-button[title="Undo thumb-up"], #player .now-playing-actions paper-icon-button[title="Undo thumb-down"] {
       color: #5294e2; }
 
-.paper-tabs-0 #selectionBar.paper-tabs {
+.paper-tabs-1 #selectionBar.paper-tabs {
   background-color: #5294e2; }
 
 .paper-fab-0 {
