@@ -190,6 +190,18 @@ paper-header-panel#content-container  {
     }
 }
 
+// Quick Nav
+
+.gpm-quick-nav-2 .gpm-quick-nav {
+    &.items > [selected] {
+        color: $selected_bg_color !important;
+    }
+
+    &.items > *, &.more {
+        color: $dark_sidebar_fg !important;
+    }
+}
+
 // Search Bar
 
 .sj-search-box-0, .sj-search-box-1 {

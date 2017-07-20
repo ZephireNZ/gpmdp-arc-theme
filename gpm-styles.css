@@ -112,6 +112,11 @@ paper-header-panel#content-container paper-toolbar#material-app-bar {
   #nav-container .nav-item-container > iron-icon {
     color: #BAC3CF; }
 
+.gpm-quick-nav-2 .gpm-quick-nav.items > [selected] {
+  color: #5294e2 !important; }
+.gpm-quick-nav-2 .gpm-quick-nav.items > *, .gpm-quick-nav-2 .gpm-quick-nav.more {
+  color: #BAC3CF !important; }
+
 .sj-search-box-0, .sj-search-box-1 {
   border-color: 1px solid rgba(21, 23, 28, 0.4);
   background-color: rgba(95, 105, 127, 0.4); }
