@@ -8,6 +8,7 @@ $darker: 'false';
 // Custom Colors
 
 $dark_sidebar_highlight: lighten($bg_color, 10%);
+$header_highlight: lighten($header_bg, 10%);
 
 
 // General
@@ -83,7 +84,7 @@ sj-home[selected] {
     #drawer.sj-right-drawer {
         background-color: $dark_sidebar_bg;
 
-        .paper-toolbar-1 {
+        .paper-toolbar-2 {
             background-color: $dark_sidebar_bg;
         }
     }
@@ -156,9 +157,10 @@ paper-header-panel#content-container  {
     color: $text_color;
 }
 
-.paper-drawer-panel-0 iron-selector.paper-drawer-panel > #drawer.paper-drawer-panel{
+.paper-drawer-panel-1 iron-selector.paper-drawer-panel > #drawer.paper-drawer-panel {
     background-color: $dark_sidebar_bg; //TODO: Transparancy to window
     color: $dark_sidebar_fg;
+    border-bottom: 1px solid $dark_sidebar_border !important;
 }
 
 #nav-container {
@@ -236,7 +238,7 @@ paper-header-panel#content-container  {
 
     .sj-search-suggestion-0 {
         &:hover, &.query-selected {
-            background-color: lighten($header_bg, 10%);
+            background-color: $header_highlight;
             color: $text_color;
         }
 
@@ -259,7 +261,7 @@ paper-header-panel#content-container  {
         }
 
         &:hover, &.query-selected {
-            background-color: lighten($header_bg, 10%);
+            background-color: $header_highlight;
             color: $text_color;
         }
     }
@@ -281,8 +283,7 @@ paper-header-panel#content-container  {
             fill: $header_bg;
         }
     }
-
-    .paper-progress-1, .paper-progress-2 {
+    .paper-progress-1, .paper-progress-2, .paper-progress-3 {
         #primaryProgress.paper-progress {
             background-color: $selected_bg_color;
         }
@@ -314,7 +315,7 @@ paper-header-panel#content-container  {
     #exp-menu-queue.opened:not([style-scope]):not(.style-scope), 
     paper-icon-button[data-id="queue"].opened:not([style-scope]):not(.style-scope), 
     paper-icon-button #exp-menu-queue.opened:not([style-scope]):not(.style-scope) {
-        color: $selected_bg_color;
+        color: $selected_bg_color !important;
     }
 
     .now-playing-actions paper-icon-button {
@@ -428,22 +429,22 @@ paper-drawer-panel iron-image#material-hero-image {
 }
 
 iron-icon.primary:not([style-scope]):not(.style-scope) {
-    color: $selected_bg_color;
+    color: $selected_bg_color !important;
 }
 
 .primary:not([style-scope]):not(.style-scope) {
-    color: $selected_bg_color;
+    color: $selected_bg_color !important;
 }
 
 iron-icon[icon="av:explicit"] {
-    color: $selected_bg_color;
+    color: $selected_bg_color !important;
 }
 
 .subcategories-list {
     background-color: $header_bg;
 
     li a:hover, .material-list li a:focus {
-        background-color: lighten($header_bg, 10%);
+        background-color: $header_highlight;
         color: $header_fg;
     }
 }
@@ -513,7 +514,7 @@ iron-icon[icon="av:explicit"] {
 }
 
 .top-charts-view .song-row [data-col="index"] .column-content:not([style-scope]):not(.style-scope) {
-    color: $selected_bg_color;
+    color: $selected_bg_color !important;
 }
 
 // Cards
@@ -561,9 +562,9 @@ iron-icon[icon="av:explicit"] {
     }
 }
 
-.paper-button-1 {
-    background-color: $selected_bg_color;
-    color: $selected_fg_color;
+.paper-button-1, .paper-button-2 {
+    background-color: $selected_bg_color !important;
+    color: $selected_fg_color !important;
 }
 
 // Menus
@@ -577,7 +578,13 @@ iron-icon[icon="av:explicit"] {
             background-color: $dark_sidebar_highlight;
         }
 
-        .goog-menuitem-content {
+        &.selected {
+            div.goog-menuitem-content:not([style-scope]):not(.style-scope) { // div to get higher specificity
+                color: $selected_bg_color !important;
+            }
+        }
+
+        .goog-menuitem-content { 
             color: $dark_sidebar_fg !important;
         }
         background-color: $dark_sidebar_bg;
@@ -727,6 +734,12 @@ paper-toast paper-button[data-action="button"]:not([style-scope]):not(.style-sco
     color: $selected_bg_color;
 }
 
+//Dialog
+
+.paper-dialog-0 {
+    background-color: $selected_bg_color;
+    color: $selected_fg_color;
+}
 
 // Miscellaneous
 

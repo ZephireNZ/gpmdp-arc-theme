@@ -55,7 +55,7 @@ sj-home[selected] .home-palette-id-5 {
 
 #playlist-drawer #drawer.sj-right-drawer {
   background-color: #353945; }
-  #playlist-drawer #drawer.sj-right-drawer .paper-toolbar-1 {
+  #playlist-drawer #drawer.sj-right-drawer .paper-toolbar-2 {
     background-color: #353945; }
 #playlist-drawer .autoplaylist-section, #playlist-drawer #recent-playlists-container {
   border-bottom: 1px solid #2a2d37; }
@@ -93,9 +93,10 @@ paper-header-panel#content-container paper-toolbar#material-app-bar {
   background-color: #4e5467;
   color: #D3DAE3; }
 
-.paper-drawer-panel-0 iron-selector.paper-drawer-panel > #drawer.paper-drawer-panel {
+.paper-drawer-panel-1 iron-selector.paper-drawer-panel > #drawer.paper-drawer-panel {
   background-color: #353945;
-  color: #BAC3CF; }
+  color: #BAC3CF;
+  border-bottom: 1px solid #2a2d37 !important; }
 
 #nav-container .nav-toolbar {
   background-color: #353945; }
@@ -157,7 +158,7 @@ paper-header-panel#content-container paper-toolbar#material-app-bar {
     color: #5294e2; }
     #player paper-icon-button#player-bar-play-pause:not([style-scope]):not(.style-scope):not([disabled]) svg path:nth-child(2) {
       fill: #2f343f; }
-  #player .paper-progress-1 #primaryProgress.paper-progress, #player .paper-progress-2 #primaryProgress.paper-progress {
+  #player .paper-progress-1 #primaryProgress.paper-progress, #player .paper-progress-2 #primaryProgress.paper-progress, #player .paper-progress-3 #primaryProgress.paper-progress {
     background-color: #5294e2; }
   #player:hover #material-player-progress:not([disabled]) #progressContainer {
     background-color: #D3DAE3; }
@@ -175,7 +176,7 @@ paper-header-panel#content-container paper-toolbar#material-app-bar {
   #player #exp-menu-queue.opened:not([style-scope]):not(.style-scope),
   #player paper-icon-button[data-id="queue"].opened:not([style-scope]):not(.style-scope),
   #player paper-icon-button #exp-menu-queue.opened:not([style-scope]):not(.style-scope) {
-    color: #5294e2; }
+    color: #5294e2 !important; }
   #player .now-playing-actions paper-icon-button {
     color: #D3DAE3; }
     #player .now-playing-actions paper-icon-button[title="Undo thumb-up"], #player .now-playing-actions paper-icon-button[title="Undo thumb-down"] {
@@ -240,13 +241,13 @@ paper-drawer-panel iron-image#material-hero-image {
   color: #D3DAE3; }
 
 iron-icon.primary:not([style-scope]):not(.style-scope) {
-  color: #5294e2; }
+  color: #5294e2 !important; }
 
 .primary:not([style-scope]):not(.style-scope) {
-  color: #5294e2; }
+  color: #5294e2 !important; }
 
 iron-icon[icon="av:explicit"] {
-  color: #5294e2; }
+  color: #5294e2 !important; }
 
 .subcategories-list {
   background-color: #2f343f; }
@@ -287,7 +288,7 @@ iron-icon[icon="av:explicit"] {
   border-top: 1px solid #242830; }
 
 .top-charts-view .song-row [data-col="index"] .column-content:not([style-scope]):not(.style-scope) {
-  color: #5294e2; }
+  color: #5294e2 !important; }
 
 .material-card {
   background-color: #2f343f; }
@@ -309,9 +310,9 @@ iron-icon[icon="av:explicit"] {
 .fade-out:after {
   background: linear-gradient(to right, rgba(47, 52, 63, 0), #2f343f) !important; }
 
-.paper-button-1 {
-  background-color: #5294e2;
-  color: #ffffff; }
+.paper-button-1, .paper-button-2 {
+  background-color: #5294e2 !important;
+  color: #ffffff !important; }
 
 .goog-menu {
   background-color: #353945;
@@ -320,6 +321,8 @@ iron-icon[icon="av:explicit"] {
     background-color: #353945; }
     .goog-menu .goog-menuitem:hover {
       background-color: #4e5467; }
+    .goog-menu .goog-menuitem.selected div.goog-menuitem-content:not([style-scope]):not(.style-scope) {
+      color: #5294e2 !important; }
     .goog-menu .goog-menuitem .goog-menuitem-content {
       color: #BAC3CF !important; }
   .goog-menu .goog-submenu iron-icon {
@@ -395,5 +398,9 @@ iron-icon[icon="av:explicit"] {
 
 paper-toast paper-button[data-action="button"]:not([style-scope]):not(.style-scope) {
   color: #5294e2; }
+
+.paper-dialog-0 {
+  background-color: #5294e2;
+  color: #ffffff; }
 
 /*# sourceMappingURL=gpm-styles.css.map */
