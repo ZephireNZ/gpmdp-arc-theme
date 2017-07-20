@@ -26,3 +26,9 @@ TODO
 - Playlist menu icons, highlight
 - trash
 - page load spinner (eg click on playlist from right)
+- Playlist hover .playlist-view .editable:hover
+- New Sidebar colours
+- Tabs in Library highlight
+- See all button (top charts, artist page)
+- Recents title colour
+- Biography pop-up colour
