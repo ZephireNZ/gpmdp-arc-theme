@@ -278,6 +278,8 @@ iron-icon[icon="av:explicit"] {
   .sj-play-button-0 .spinner-layer.paper-spinner-lite, .sj-play-button-1 .spinner-layer.paper-spinner-lite, .sj-play-button-2 .spinner-layer.paper-spinner-lite, .sj-play-button-3 .spinner-layer.paper-spinner-lite, .sj-play-button-4 .spinner-layer.paper-spinner-lite, .sj-play-button-5 .spinner-layer.paper-spinner-lite, .sj-play-button-6 .spinner-layer.paper-spinner-lite, .sj-play-button-7 .spinner-layer.paper-spinner-lite, .sj-play-button-8 .spinner-layer.paper-spinner-lite, .sj-play-button-9 .spinner-layer.paper-spinner-lite, .sj-play-button-10 .spinner-layer.paper-spinner-lite {
     border-color: #ffffff; }
 
+.gpm-card-grid-0 > [slot="title"], .gpm-card-grid-3 > [slot="title"] {
+  color: #D3DAE3; }
 .gpm-card-grid-0 #gridTitle, .gpm-card-grid-3 #gridTitle {
   color: #D3DAE3; }
 
@@ -337,8 +339,8 @@ iron-icon[icon="av:explicit"] {
   .goog-menu.now-playing-menu {
     border: 1px solid #2a2d37 !important; }
 
-.paper-spinner-lite-1 .spinner-layer.paper-spinner-lite {
-  border-color: #5294e2; }
+paper-spinner-lite .spinner-layer.paper-spinner-lite {
+  border-color: #5294e2 !important; }
 
 .material-drag.tight-song-row .song-drag-label {
   background-color: #5294e2;
@@ -404,8 +406,12 @@ iron-icon[icon="av:explicit"] {
 paper-toast paper-button[data-action="button"]:not([style-scope]):not(.style-scope) {
   color: #5294e2; }
 
-.paper-dialog-0 {
-  background-color: #5294e2;
-  color: #ffffff; }
+paper-dialog, .paper-dialog-0 {
+  background-color: #2f343f;
+  color: #D3DAE3; }
+  paper-dialog paper-dialog-scrollable .is-scrolled:not(:first-child)::before, paper-dialog .paper-dialog-scrollable-0 .is-scrolled:not(:first-child)::before, .paper-dialog-0 paper-dialog-scrollable .is-scrolled:not(:first-child)::before, .paper-dialog-0 .paper-dialog-scrollable-0 .is-scrolled:not(:first-child)::before {
+    background: #262a33; }
+  paper-dialog .attribution, paper-dialog .attribution a, .paper-dialog-0 .attribution, .paper-dialog-0 .attribution a {
+    color: #D3DAE3; }
 
 /*# sourceMappingURL=gpm-styles.css.map */

@@ -497,9 +497,16 @@ iron-icon[icon="av:explicit"] {
     }
 }
 
-// Recents
+paper-spinner-lite {
 
+}
+
+// Recents
 .gpm-card-grid-0, .gpm-card-grid-3 {
+
+    > [slot="title"] {
+        color: $text_color;
+    }
 
     #gridTitle {
         color: $text_color;
@@ -618,8 +625,8 @@ iron-icon[icon="av:explicit"] {
 
 // Loading Spinner
 
-.paper-spinner-lite-1 .spinner-layer.paper-spinner-lite {
-    border-color: $selected_bg_color;
+paper-spinner-lite .spinner-layer.paper-spinner-lite {
+    border-color: $selected_bg_color !important;
 }
 
 // Drag-and-drop
@@ -749,9 +756,19 @@ paper-toast paper-button[data-action="button"]:not([style-scope]):not(.style-sco
 
 //Dialog
 
-.paper-dialog-0 {
-    background-color: $selected_bg_color;
-    color: $selected_fg_color;
+paper-dialog, .paper-dialog-0 {
+    background-color: $header_bg;
+    color: $text_color;
+
+    paper-dialog-scrollable, .paper-dialog-scrollable-0 {
+        .is-scrolled:not(:first-child)::before {
+            background: $header_border;
+        }
+    }
+
+    .attribution, .attribution a {
+        color: $text_color;
+    }
 }
 
 // Miscellaneous
